@@ -86,6 +86,10 @@ a{
 .card-head{
     margin-bottom: 16px;
 }
+.card-body .hashtag-bar{
+    display: flex;
+    align-items: center;
+}
 .card-body .hashtag{
     color: #0027D5;
     font-size: 24px;

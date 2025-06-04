@@ -1,0 +1,299 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+/*=======================================*/
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+a{
+    display:inline-block;
+    text-decoration:none;
+    color: #4B4B4B;
+}
+
+/*=======================================*/
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav a{
+    font-weight: 700;
+    font-size: 28px;
+    padding: 24px 20px;
+}
+.nav a:hover{
+    color: #0027D5;
+}
+
+/*=======================================*/
+
+.article-head{
+    display: flex;
+    align-items:center;
+    border:1px solid #6C757D;
+}
+
+.article-head img{
+    max-width: 948px;
+    
+}
+.article-intro{
+    padding-left: 24px;
+    
+}
+.article-intro .title{
+    display: flex;
+}
+.article-intro .title p{
+    font-size: 24px;
+    color: #0027D5;
+    margin-right: 8px;
+}
+.article-intro .tag-bkblue{
+    color: #fff;
+    background: #0027D5;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 40px;
+
+}
+.article-intro .title2{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+@media(max-width:1400px){
+    .article-head img{
+    width: 50%;
+    }
+}
+@media(max-width:768px){
+    .article-head{
+        flex-direction: column;
+    }
+    .article-head img{
+    width: 100%;
+    }
+    .article-intro{
+    padding: 48px 12px;
+}
+}
+
+
+/*=======================================*/
+
+main{
+    border:1px solid #6C757D;
+    padding: 80px 0px;
+}
+
+.article{
+    max-width: 636px;
+    margin: 0 auto;
+}
+@media(max-width:768px){
+    main{
+        padding: 64px 12px;
+    }
+    .article{
+        width: 100%;
+    }
+}
+
+.paragraph{
+    margin-bottom: 48px;
+}
+
+.paragraph img{
+    margin-bottom: 24px;
+}
+
+.paragraph h3{
+    font-size: 28px;
+    color: #0027D5;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+.paragraph p{
+    margin-top: 24px;
+}
+.paragraph a{
+    color: #0027D5;
+    text-decoration: underline;
+}
+.text-block{
+    margin-bottom: 24px;
+}
+.text-block h4{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+.text-block h5{
+    margin-bottom: 8px;
+}
+.text-block ol{
+    list-style: decimal;
+    margin-left: 20px;
+}
+.text-block ul{
+    list-style: disc;
+    margin-left: 20px;
+}
+.text-block a{
+    color: #0027D5;
+}
+.text-summary{
+    font-weight: 700;
+    background: #EDEDED;
+    padding: 24px;
+    border-radius: 24px;
+    margin-bottom: 24px;
+}
+.article-navigation{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.prev-post,.next-post{
+    display: flex;
+    padding: 8px 16px; 
+    border:solid 1px #000;
+    border-radius: 24px; 
+    align-items: center;
+    gap: 4px;
+}
+
+@media(max-width:375px){
+    .rwd-image-content1 {
+        content: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/blog-content/content1.png?raw=true'); 
+    }
+    .rwd-image-content2 {
+        content: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/blog-content/content2.png?raw=true'); 
+    }
+    .rwd-image-content3 {
+        content: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/blog-content/content3.png?raw=true'); 
+    }
+    .rwd-image-content4 {
+        content: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/blog-content/content4.png?raw=true'); 
+    }
+}
+
+/*=======================================*/
+
+footer{
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+.mail{
+    font-size: 32px;
+}
+
+.medialink {
+    display: flex;
+    align-items: center;
+}
+.medialink a{
+    padding: 10px;
+}
+
+footer p{
+    text-align:center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+@media(max-width:1295px){
+    footer{
+        max-width: 100%;
+    }
+}
+@media(max-width:768px){
+    .info{
+        flex-direction: column;
+    }
+    .mail{
+        font-size: 24px;
+    }
+    .medialink{
+        margin-top: 24px;
+    }
+}
+
+@media(max-width:375px){
+    .info{
+        display: none;
+    }
+    
+}
